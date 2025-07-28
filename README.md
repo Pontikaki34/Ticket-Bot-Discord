@@ -60,15 +60,20 @@ Set unused options’ label/message to `none`.
 
 ## Usage
 
-1. Install dependencies:
+1. Install Python
+   ```
+   i dont know what os your running so you need to find it yourself python
+   ```
+
+2. Install dependencies:
 
     ```
     pip install -r Requirements.txt
     ```
 
-2. Configure your settings in `data.txt`.
+3. Configure your settings in `data.txt`.
 
-3. Run the bot:
+4. Run the bot:
 
     ```
     python Main.py
@@ -100,7 +105,7 @@ option_3_message=Thank you for your interest in partnering, {user}! A Staff Memb
 option_4_label=Other
 option_4_message=none
 
-option_5_label=Other 2
+option_5_label=none
 option_5_message=none
 ```
 
