@@ -8,7 +8,7 @@ intents = discord.Intents.all()
 bot = commands.Bot(command_prefix="!", intents=intents)
 tree = bot.tree
 
-# Load config from data.txt
+
 def load_config():
     config = {}
     with open("data.txt", "r", encoding="utf-8") as f:
@@ -41,7 +41,7 @@ style_map = {
 }
 button_style = style_map.get(button_color, discord.ButtonStyle.gray)
 
-# Load ticket options from config (up to 5)
+
 ticket_options = []
 for i in range(1, 6):
     label = config.get(f"option_{i}_label", "none")
@@ -105,7 +105,7 @@ class TicketSelect(discord.ui.Select):
         guild = interaction.guild
         category = discord.utils.get(guild.categories, id=category_id)
 
-        # Prevent multiple tickets per user in the category
+        
         for channel in guild.text_channels:
             if channel.category_id == category_id and channel.topic == str(user.id):
                 await interaction.response.send_message("❌ You already have an open ticket.", ephemeral=True)
@@ -133,7 +133,7 @@ class TicketSelect(discord.ui.Select):
             topic=str(user.id)
         )
 
-        # Use option message or default if "none"
+       
         message = option["message"]
         if not message or message.lower() == "none":
             message = f"🎫 Hello {user.mention}, your ticket has been created."
