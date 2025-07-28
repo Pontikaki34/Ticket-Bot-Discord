@@ -1,0 +1,30 @@
+support_role_id=Your-Ticket-Role-Id
+
+ticket_panel_channel_id=Your-Ticket-Channel
+
+panel_message=🎫 Click below to open a support ticket.
+
+button_color=green
+
+ticket_name=ticket-{username}
+
+category_id=Your-Tickets-Category
+
+ticket_logs_channel_id=Your-Ticket-Logs-Channel-Id
+
+bot_token=Your-Bot-Token
+
+option_1_label=Support
+option_1_message=Hello {user}, how can we help you with support?
+
+option_2_label=Report
+option_2_message=Please describe what you're reporting, {user}.
+
+option_3_label=Partnership
+option_3_message=Thank you for your interest in partnering, {user}! A Staff Member Will Be with you shortly
+
+option_4_label=Other
+option_4_message=none
+
+option_5_label=none
+option_5_message=none
